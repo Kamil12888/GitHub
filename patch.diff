@@ -1,0 +1,85 @@
+From 747753917203591d7c73c09e3ac2717d7ebdbc27 Mon Sep 17 00:00:00 2001
+From: Kamil <Kamil__abdulla@hotmail.com>
+Date: Tue, 29 Jul 2014 17:30:17 +0300
+Subject: [PATCH] :space_invader: Added .gitattributes & .gitignore files
+
+---
+ .gitattributes | 22 ++++++++++++++++++++++
+ .gitignore     | 36 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 58 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+
+diff --git a/.gitattributes b/.gitattributes
+new file mode 100644
+index 0000000..412eeda
+--- /dev/null
++++ b/.gitattributes
+@@ -0,0 +1,22 @@
++# Auto detect text files and perform LF normalization
++* text=auto
++
++# Custom for Visual Studio
++*.cs     diff=csharp
++*.sln    merge=union
++*.csproj merge=union
++*.vbproj merge=union
++*.fsproj merge=union
++*.dbproj merge=union
++
++# Standard to msysgit
++*.doc	 diff=astextplain
++*.DOC	 diff=astextplain
++*.docx diff=astextplain
++*.DOCX diff=astextplain
++*.dot  diff=astextplain
++*.DOT  diff=astextplain
++*.pdf  diff=astextplain
++*.PDF	 diff=astextplain
++*.rtf	 diff=astextplain
++*.RTF	 diff=astextplain
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..6dae747
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,36 @@
++# Windows image file caches
++Thumbs.db
++ehthumbs.db
++
++# Folder config file
++Desktop.ini
++
++# Recycle Bin used on file shares
++$RECYCLE.BIN/
++
++# Windows Installer files
++*.cab
++*.msi
++*.msm
++*.msp
++
++# =========================
++# Operating System Files
++# =========================
++
++# OSX
++# =========================
++
++.DS_Store
++.AppleDouble
++.LSOverride
++
++# Icon must ends with two \r.
++Icon
++
++# Thumbnails
++._*
++
++# Files that might appear on external disk
++.Spotlight-V100
++.Trashes
+-- 
+1.8.3.msysgit.0
+
